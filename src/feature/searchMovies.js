@@ -1,5 +1,6 @@
 import { renderCards } from "../views/renderCards.js";
 import { getData } from "./request.js";
+import { renderError } from "../views/renderError.js";
 
 function searchMovies() {
     const searchLine = document.querySelector(".search-line");

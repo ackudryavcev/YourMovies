@@ -19,6 +19,7 @@ function renderCards(arrayOfData) {
         const poster = document.createElement("img");
         poster.classList.add("video-poster");
         poster.src = element.Poster;
+        poster.alt = element.Title;
         card.appendChild(poster);
         containerForCards.appendChild(card);
     });
