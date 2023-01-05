@@ -1,0 +1,12 @@
+{
+    "name": "movie_app",
+    "version": "1.0.0",
+    "description": "Movie app - homework for HYF",
+    "main": "./src/app.js",
+    "scripts": {
+        "prettier:write": "prettier --write .",
+        "prettier:check": "prettier --check ."
+    },
+    "author": "Aleksei Kudriavtcev",
+    "license": "ISC"
+}
