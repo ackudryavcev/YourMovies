@@ -1,5 +1,6 @@
 function renderCards(arrayOfData) {
     const containerForCards = document.querySelector(".cards");
+    containerForCards.innerHTML = "";
     arrayOfData.forEach(element => {
         const card = document.createElement("div");
         card.classList.add('card');
