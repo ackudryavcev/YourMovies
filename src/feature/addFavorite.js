@@ -12,7 +12,7 @@ function addFavorite(event) {
         } else {
             let elementNumber;
             favoriteTags.forEach((element, index) => {
-                if (element === favoriteElement.imdbID) elementNumber = index
+                if (element === favoriteElement.imdbID) elementNumber = index;
             });
             data.splice(elementNumber, 1);
             favoriteTags.splice(elementNumber, 1);

@@ -1,7 +1,6 @@
 import { addFavorite } from "../feature/addFavorite.js";
 
 function renderCards(arrayOfData) {
-    console.log(arrayOfData);
     const containerForCards = document.querySelector(".cards");
     containerForCards.innerHTML = "";
     arrayOfData.forEach(element => {
