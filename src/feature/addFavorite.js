@@ -1,4 +1,5 @@
 import { data, favoriteTags } from "../data.js";
+import { renderFavorites } from "../views/renderFavorites.js";
 
 function addFavorite(event) {
     if (event.target.classList.contains("video-like")) {
@@ -11,11 +12,17 @@ function addFavorite(event) {
 
         } else {
             let elementNumber;
+            const favoriteLink = document.querySelectorAll(".menu-item")[1];
             favoriteTags.forEach((element, index) => {
-                if (element === favoriteElement.imdbID) elementNumber = index;
+                if (element === favoriteElement.imdbID) {
+                    elementNumber = index;
+                }
             });
             data.splice(elementNumber, 1);
             favoriteTags.splice(elementNumber, 1);
+            if (favoriteLink.classList.contains("choose")) {
+                renderFavorites();
+            }
         }
         localStorage.setItem("favoriteTags", JSON.stringify(favoriteTags));
         localStorage.setItem("data", JSON.stringify(data));

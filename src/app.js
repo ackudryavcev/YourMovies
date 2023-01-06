@@ -1,6 +1,3 @@
-import { getData } from "./feature/request.js";
-import { renderCards } from "./views/renderCards.js";
-import { renderError } from "./views/renderError.js";
 import { searchMovies } from "./feature/searchMovies.js";
 import { renderFavorites } from "./views/renderFavorites.js";
 
@@ -16,15 +13,10 @@ window.onload = () => {
         }
     })
     button.addEventListener("click", searchMovies);
-    favoriteLink.addEventListener("click", renderFavorites)
+    favoriteLink.addEventListener("click", renderFavorites);
     searchLink.addEventListener("click", () => {
-        getData('Christmas', '', '')
-            .then(data => renderCards(data.Search))
-            .catch(renderError);
-
-    })
-    getData('New Year', '', '')
-        .then(data => renderCards(data.Search))
-        .catch(renderError);
+        searchMovies('Christmas');
+    });
+    searchMovies('New Year');
 
 };
