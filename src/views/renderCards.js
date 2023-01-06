@@ -4,7 +4,7 @@ function renderCards(arrayOfData) {
     arrayOfData.forEach(element => {
         const card = document.createElement("div");
         card.classList.add('card');
-        const title = document.createElement("h2");
+        const title = document.createElement("h3");
         title.classList.add("video-title");
         title.textContent = element.Title;
         card.appendChild(title);
