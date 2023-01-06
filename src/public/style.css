@@ -181,3 +181,7 @@ html {
 .video-like {
     fill: var(--fourth-color);
 }
+
+.video-like-red {
+    fill: var(--second-color);
+}
