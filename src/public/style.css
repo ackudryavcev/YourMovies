@@ -21,7 +21,9 @@ html {
 }
 
 .header {
-    flex-grow: 1;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
     border-right: 1px solid var(--first-color);
 }
 
@@ -93,6 +95,7 @@ html {
 
 .main-content {
     flex-grow: 9;
+    margin-left: 250px;
 }
 
 .search-line {
@@ -156,4 +159,25 @@ html {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.8rem;
+}
+
+.poster-container {
+    position: relative;
+}
+
+.video-like-container {
+    position: absolute;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    top: 30px;
+    right: 15px;
+}
+
+.video-like-container:hover {
+    cursor: pointer;
+}
+
+.video-like {
+    fill: var(--fourth-color);
 }
