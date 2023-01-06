@@ -8,6 +8,14 @@ function addFavorite(event) {
         if (!favoriteTags.includes(favoriteElement.imdbID)) {
             favoriteTags.push(favoriteElement.imdbID);
             data.push(favoriteElement);
+
+        } else {
+            let elementNumber;
+            favoriteTags.forEach((element, index) => {
+                if (element === favoriteElement.imdbID) elementNumber = index
+            });
+            data.splice(elementNumber, 1);
+            favoriteTags.splice(elementNumber, 1);
         }
         localStorage.setItem("favoriteTags", JSON.stringify(favoriteTags));
         localStorage.setItem("data", JSON.stringify(data));
