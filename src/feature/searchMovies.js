@@ -23,8 +23,16 @@ function searchMovies(searchWord) {
     searchYear.value = "";
     searchType.value = "all"
     getData(search, year, type)
-        .then(data => renderCards(data.Search))
-        .catch(renderError);
+        .then(data => {
+            if (data.Response === "True") {
+                renderCards(data.Search)
+            } else {
+                renderError(data.Error)
+            }
+        })
+        .catch(error => {
+            renderError()
+        });
 }
 
 export { searchMovies }
