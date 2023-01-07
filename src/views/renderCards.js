@@ -29,7 +29,9 @@ function renderCards(arrayOfData) {
         const like = document.createElement("div");
         like.classList.add("video-like-container");
         like.setAttribute("data-info", JSON.stringify(element));
-        like.innerHTML = `<svg class="video-like" width="30px" height="30px" viewBox="0 0 16 16" id="meteor-icon-kit__solid-plus-square-s"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 7H5C4.44772 7 4 7.4477 4 8C4 8.5523 4.44772 9 5 9H7V11C7 11.5523 7.4477 12 8 12C8.5523 12 9 11.5523 9 11V9H11C11.5523 9 12 8.5523 12 8C12 7.4477 11.5523 7 11 7H9V5C9 4.44772 8.5523 4 8 4C7.4477 4 7 4.44772 7 5V7zM2 0H14C15.1046 0 16 0.89543 16 2V14C16 15.1046 15.1046 16 14 16H2C0.89543 16 0 15.1046 0 14V2C0 0.89543 0.89543 0 2 0z"/></svg>`;
+        like.innerHTML = `<svg class="video-like" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 8V16M8 12H16M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>`;
         const likeImage = like.children;
         likeImage[0].addEventListener('click', addFavorite);
         if (favoriteTags.includes(element.imdbID)) {

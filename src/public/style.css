@@ -33,6 +33,10 @@ html {
     align-items: center;
 }
 
+.title-container a {
+    text-decoration: none;
+}
+
 .title-image {
     width: 50px;
     height: 50px;
@@ -94,7 +98,6 @@ html {
 }
 
 .main-content {
-    flex-grow: 9;
     margin-left: 250px;
 }
 
@@ -112,14 +115,35 @@ html {
     border: 1px solid var(--third-color);
 }
 
+.search-year {
+    margin: 50px 0 0 10px;
+    padding: 0 7px;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    color: var(--first-color);
+    border: 1px solid var(--first-color);
+}
+
+.search-type {
+    margin: 50px 0 0 10px;
+    padding: 0 7px;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    color: var(--first-color);
+    border: 1px solid var(--first-color);
+}
+
 .button {
     background-color: var(--second-color);
     width: 130px;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 0;
     color: var(--fourth-color);
     cursor: pointer;
+    margin: 50px 0 0 10px;
 }
 
 .cards {
@@ -131,7 +155,7 @@ html {
 .card {
     width: 350px;
     color: var(--third-color);
-    margin: 10px;
+    margin: 20px;
     border-top: 1px solid var(--first-color);
 }
 
@@ -145,6 +169,7 @@ html {
     font-size: 2.4rem;
     font-weight: 900;
     line-height: 2.8rem;
+    height: 60px;
 }
 
 .video-type {
@@ -168,8 +193,8 @@ html {
 .video-like-container {
     position: absolute;
     z-index: 10;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     top: 30px;
     right: 15px;
 }
@@ -184,4 +209,66 @@ html {
 
 .video-like-red {
     fill: var(--second-color);
+}
+
+.favorite-buttons {
+    width: 250px;
+    margin: 50px auto;
+}
+
+.button-navigation {
+    width: 100px;
+    height: 30px;
+    background-color: var(--second-color);
+    color: var(--fourth-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 0;
+}
+
+.button-navigation:hover {
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1240px) {
+    .cards {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 47%);
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .header {
+        position: fixed;
+        width: 100vw;
+        height: 250px;
+        border-bottom: 1px solid var(--first-color);
+        border-right: none;
+        background-color: white;
+        z-index: 20;
+    }
+    .main-content {
+        margin: 250px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .title-container {
+        margin-top: 20px;
+    }
+    .main-subtitle {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .cards {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 97%);
+    }
 }

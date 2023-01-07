@@ -2,10 +2,10 @@ import { data, favoriteTags } from "../data.js";
 import { renderFavorites } from "../views/renderFavorites.js";
 
 function addFavorite(event) {
-    if (event.target.classList.contains("video-like")) {
-        const favoriteElement = JSON.parse(event.target.parentElement.getAttribute("data-info"));
-        event.target.classList.toggle("video-like-red");
-        event.target.addEventListener("click", addFavorite);
+    if (event.target.parentElement.classList.contains("video-like")) {
+        const favoriteElement = JSON.parse(event.target.parentElement.parentElement.getAttribute("data-info"));
+        event.target.parentElement.classList.toggle("video-like-red");
+        event.target.parentElement.addEventListener("click", addFavorite);
         if (!favoriteTags.includes(favoriteElement.imdbID)) {
             favoriteTags.push(favoriteElement.imdbID);
             data.push(favoriteElement);
