@@ -4,6 +4,8 @@
 ----
 ######  The project uses The OMDb API and only features of this API
 ----
+###### The app is fully responsive for all screen resolutions.
+----
 ######  The project allows you to search for movies in the search bar and add movies to your favorites. You can also add year and type of movie to the search
 ----
 ######  When searching, you can only see 10 movies - these are API features
