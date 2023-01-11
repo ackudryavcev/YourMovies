@@ -30,7 +30,7 @@ root
         └── renderCards.js
         └── renderError.js
         └── renderFavorites.js
-
+```
 The project has the following structure: in the root directory there is an index.html file and app.js - the start file for the java script and data.js - contain data about selected films, then in the views folder you can see the pages that can be displayed in the application - search cards, error or watch selected films, in the public folder are collected pictures, icons and a file with styles and in the feature folder you can see files with basic functions - add to favorites, request to the server and search for movies
 
 - `app.js` the start file for the java script
