@@ -33,7 +33,7 @@ function searchMovies(searchWord) {
             if (data.Response === "True") {
                 //if it came and is successful, we display the number of found films and draw cards
                 renderCards(data.Search);
-                searchResults.textContent = `Yor request - ${search}. Total found ${data.totalResults} movies`;
+                searchResults.textContent = `Your request - ${search}. Total found ${data.totalResults} movies`;
             } else {
                 //if the response from the server came, but it was not successful, we display an error with the response from the server
                 renderError(data.Error)
