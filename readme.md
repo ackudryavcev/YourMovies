@@ -51,30 +51,20 @@ No libraries were involved
 
 ## Project features
 
-> It should be possible to search for movies by title - done
----
-> It should be possible to add and remove movies to favorites (will be stored in local storage) - done
+- It should be possible to search for movies by title - done.
+- It should be possible to add and remove movies to favorites (will be stored in local storage) - done.
 
 ## Must be:
 
->Search bar with the ability to search for a movie (required parameter) - done
----
->Movie selection bar by year -done
----
->Movie/series/episode selection bar -done
----
->Be sure to after the search the opportunity to see the name of the movie, poster, year and type (movie, TV series, episode) - done
----
->The same goes for watching favorite movies. - done
----
->Maximum number of movies per page - 10 (limited by api) - done
----
+- Search bar with the ability to search for a movie (required parameter) - done.
+- Movie selection bar by year - done.
+- Movie/series/episode selection bar - done.
+- Be sure to after the search the opportunity to see the name of the movie, poster, year and type (movie, TV series, episode) - done.
+- The same goes for watching favorite movies. - done.
+- Maximum number of movies per page - 10 (limited by api) - done.
 
 ## It would be nice to do:
->Links to more information about the film on IMDB -done
----
->Display information about the total number of matching movies - done
----
->Make scrolling from pages in favorites (when there are more than 10 movies) - done
----
+- Links to more information about the film on IMDB - done.
+- Display information about the total number of matching movies - done.
+- Make scrolling from pages in favorites (when there are more than 10 movies) - done.
 
